@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Natural Tones Palette: Warm cream / sand foundation with organic charcoal text */
+  --color-neutral-50: #fcfcf9;
+  --color-neutral-100: #fafaf4;
+  --color-neutral-150: #f1f1e8;
+  --color-neutral-200: #e6e6da;
+  --color-neutral-300: #d3d3c2;
+  --color-neutral-400: #9f9f8c;
+  --color-neutral-500: #787865;
+  --color-neutral-600: #5d5d4d;
+  --color-neutral-700: #47473a;
+  --color-neutral-800: #2e2e25;
+  --color-neutral-850: #24241d;
+  --color-neutral-900: #1c1c17;
+  --color-neutral-950: #13130f;
+
+  /* Custom natural accent variables and shadows to align with Natural Tones */
+  --color-accent-cream: #f4f3e6;
+  --color-accent-clay: #eedecc;
+}
+
+/* Custom animations for dialog fades and popups */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
